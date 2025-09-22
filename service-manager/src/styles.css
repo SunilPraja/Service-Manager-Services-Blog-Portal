@@ -1,0 +1,17 @@
+:root{ --container: 1100px; font-family: Arial, sans-serif; }
+.container{ max-width:var(--container); margin:0 auto; padding:1rem; }
+.header-inner{ display:flex; justify-content:space-between; align-items:center; }
+.site-header{ background:#0f172a; color:#fff; padding:1rem 0; }
+.site-header nav a{ color:#fff; margin-left:1rem; text-decoration:none; }
+.hero{ background:#e6eef8; padding:3rem 0; text-align:center; }
+.grid{ display:grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap:1rem; margin-top:1rem; }
+.service-card, .blog-card{ border:1px solid #eee; border-radius:8px; overflow:hidden; background:#fff; }
+.service-card img, .blog-card img{ width:100%; height:180px; object-fit:cover; }
+.card-body{ padding:0.75rem; }
+.controls{ display:flex; gap:1rem; align-items:center; margin-bottom:1rem; flex-wrap:wrap; }
+.contact-form label{ display:block; margin-bottom:0.75rem; }
+.contact-form input, .contact-form textarea{ width:100%; padding:0.5rem; }
+.btn{ padding:0.6rem 1rem; background:#0b74de; color:#fff; border-radius:6px; text-decoration:none; }
+@media(max-width:600px){
+  .header-inner { flex-direction:column; gap:1rem; text-align:center; }
+}
